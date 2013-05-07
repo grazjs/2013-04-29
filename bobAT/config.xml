@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.imperialcoder.bobAT"
+        versionCode="11" 
+        version   = "0.0.3">
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>bobAT</name>
+
+    <description>
+        Displays your bob.at information.
+    </description>
+
+    <author href="http://imperialcoder.com" email="webos@imperialcoder.com">
+        imperialcoder
+    </author>
+
+    <icon src="assets/crossplatform/icon_200.png" width="200" height="200" />
+    <icon src="assets/crossplatform/icon_72.png" width="72" height="72" />
+    <icon src="assets/crossplatform/icon_64.png" width="64" height="64" />
+    <icon src="assets/crossplatform/icon_48.png" width="48" height="48" />
+    <icon src="assets/crossplatform/icon_36.png" width="36" height="36" />
+    <preference name="permissions" value="none"/>
+</widget>

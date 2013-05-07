@@ -1,0 +1,33 @@
+{
+  "id": "com.imperialcoder.bobAT",
+  "name": "bobAT",
+  "version": "0.0.3",
+  "title": "bobAT",
+  "description": "bob.at",
+  "author": {
+    "name": "imp",
+    "href": ""
+  },
+  "build": {
+    "phonegap": {
+      "enabled": true,
+      "icon": {
+        "src": "icon.png",
+        "role": "default"
+      },
+      "preferences": {
+        "phonegap-version": "2.0.0"
+      },
+      "targets": {
+        "webos": {},
+        "android": {},
+        "winphone": {},
+        "blackberry": false
+      },
+      "appId": "com.imperialcoder.bobAT"
+    }
+  },
+  "preview": {
+    "top_file": "debug.html"
+  }
+}

@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+    <section>
+        <h1>enyo</h1>
+        <p>
+        <br>
+    </p>
+    <p>
+    <img src="http://www.mwdd.com/wp-content/uploads/2012/07/enyo_270x181.jpg">
+    <br>
+</p>
+</section>
+<section>
+    <section>
+        <h2>History</h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2>palm|HP|LG webOS</h2>
+        <div>
+            <br>
+        </div>
+        <div>before enyo, there was Mojo</div>
+    </section>
+    <section>
+        <h2>Mojo</h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <img src="http://i.imgur.com/TiAVTsO.png">
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2>Ares</h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <img src="http://www.blogcdn.com/www.engadget.com/media/2009/12/ares-sdk-beta.jpg">
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2>Enyo v1</h2>
+        <div>
+            <div style="font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;">
+                <br>
+            </div>
+            <div style="font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;">(<a href="https://github.com/enyojs/enyo-1.0" style="line-height: 1.2em;letter-spacing: -0.02em;">https://github.com/enyojs/enyo-1.0</a>)</div>
+            <div style="font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;">
+                <br>
+            </div>
+            <div style="font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;">quick applications for the HP Touchpad</div>
+        </div>
+    </section>
+    <section>
+        <h2>
+            <img src="http://i.imgur.com/gIpDS96.png">
+            <br>
+        </h2>
+    </section>
+</section>
+<section>
+    <section>
+        <h2>Enyo2</h2>
+        <div>
+            <br>
+        </div>
+        <div>Open Source (github.com/enyojs)</div>
+        <div>Apache 2.0</div>
+        <div>Cross platform</div>
+        <div>Object-oriented</div>
+        <div>
+            <br>
+        </div>
+        <div>release Jan 2012</div>
+        <div>
+            <br>
+        </div>
+        <div>web:&nbsp;<a href="http://enyojs.com/" style="line-height: 1.2em;letter-spacing: -0.02em;">http://enyojs.com/</a>
+    </div>
+    <div>API:&nbsp;<a href="http://enyojs.com/api/" style="line-height: 1.2em;letter-spacing: -0.02em;">http://enyojs.com/api/</a>
+</div>
+<div>
+    <br>
+</div>
+<div>
+    <br>
+</div>
+</section>
+<section>
+    <h2>Aufbau</h2>
+    <div>
+        <br>
+    </div>
+    <p>enyo (core)<br>libs:<br>
+</p>
+<ul>
+    <li>
+        <span style="line-height: 1.2em;text-align: center;letter-spacing: -0.02em;">onyx</span>
+        <br>
+    </li>
+    <li>
+        <span style="line-height: 1.2em;text-align: center;letter-spacing: -0.02em;">layout</span>
+        <br>
+    </li>
+    <li>
+        <span style="line-height: 1.2em;text-align: center;letter-spacing: -0.02em;">canvas</span>
+        <br>
+    </li>
+    <li>
+        <span style="line-height: 1.2em;text-align: center;letter-spacing: -0.02em;">extra</span>
+        <br>
+    </li>
+    <li>
+        <span style="line-height: 1.2em;text-align: center;letter-spacing: -0.02em;">g11n</span>
+        <br>
+    </li>
+</ul>
+<p>
+</p>
+</section>
+<section>
+    <h2>Plattformen</h2>
+    <div>
+        <img src="http://i.imgur.com/FqWmNMk.jpg">
+        <br>
+    </div>
+</section>
+<section>
+    <h2>Plattformen</h2>
+    <div>
+        <img src="http://i.imgur.com/g0Fmj6y.jpg">
+        <br>
+    </div>
+</section>
+</section>
+<section>
+    <section>
+        <h2>Code</h2>
+        <div>
+            <div>
+                <br>
+            </div>
+            <div>
+                <pre style="font-style: normal;font-variant: normal;width: 862.1875px;">&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>  &lt;head&gt;<br>    &lt;title&gt;Enyo&lt;/title&gt;<br>    &lt;script src="enyo-2.2.0/enyo.js" type="text/javascript"&gt;&lt;/script&gt;<br>  &lt;/head&gt;<br>  &lt;body&gt;<br>    &lt;script type="text/javascript"&gt;<br>      new enyo.Control({content: "Hello!"}).renderInto(document.body);&nbsp;<br>    &lt;/script&gt;<br>  &lt;/body&gt;<br>&lt;/html&gt;</pre>
+            </div>
+        </div>
+        <div>
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2>Code 2</h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <pre>enyo.kind({ &nbsp;<br>  name: "HelloWorld",<br>&nbsp; kind: enyo.Control,<br>&nbsp; content: 'Hallo Welt!'<br>});<br>&nbsp;<br>new HelloWorld().write();</pre>
+            <div style="font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;">
+                <p>
+                <br>
+            </p>
+            <p>Constructor factory</p>
+            <p>
+            <br>
+        </p>
+        <p>re-usable kinds</p>
+    </div>
+</div>
+</section>
+<section>
+    <h2>Code 3</h2>
+    <div>
+        <br>
+    </div>
+    <div>package.js für verteilte Dateien</div>
+    <div>
+        <br>
+    </div>
+    <pre>enyo.depends(<br>  "kind1.js",<br>  "kind2.js",<br>  "kind2.css",<br>  "folder",<br>  "..."<br>);</pre>
+</section>
+</section>
+<section>
+    <section>
+        <h2>Elemente</h2>
+        <div>Kinds, Published Properties, Events</div>
+        <div>Inheritance</div>
+        <div>Constructor, Statics</div>
+    </section>
+    <section>
+        <h2>Kinds</h2>
+        <div>
+            <br>
+        </div>
+        <pre>enyo.kind({&nbsp;<br>  name: "NewKind",<br>  kind: "parentKind",<br>  content: "obvious"<br>});</pre>
+        <p>
+        <br>
+    </p>
+    <p>building blocks or widgets</p>
+    <p>template</p>
+    <p>
+    <br>
+</p>
+</section>
+<section>
+    <h2 style="font-style: normal;font-variant: normal;">Struktur</h2>
+    <h2>
+        <div style="font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;letter-spacing: normal;">
+            <ul>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Name</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Parent</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Published Properties, Events, Handlers</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Kind Variablen</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Classes and Styles</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Components</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Public functions</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Protected functions</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Static members</span>
+                </li>
+            </ul>
+        </div>
+    </h2>
+</section>
+<section>
+    <h2>Published Properties</h2>
+    <div>
+        <br>
+    </div>
+    <div>
+        <pre>enyo.kind({&nbsp;<br>  name: "NewKind",<br>  published: { myValue: 3 },<br>  create: function(){<br>    this.inherited(arguments);<br>    this.myValueChanged();<br>  },<br>  // getMyValue: function() ...<br>  // setMyValue: function(inValue) ...<br>  // optional method that is called whenever setMyValue is called<br>  myValueChanged: function(oldValue){<br>   //do something<br>  }<br>});</pre>
+        <font face="monospace">
+            <span style="font-size: 20.0px;line-height: 23.75px;">Nur Simple Typen definieren!</span>
+        </font>
+    </div>
+</section>
+<section>
+    <h2>Events</h2>
+    <div>
+        <pre>enyo.kind({<br>&nbsp; &nbsp; name: "MyKind",<br>&nbsp; &nbsp; handlers: { ontap: "mytap" },<br>&nbsp; &nbsp; events: { onMyEvent: "" },<br>&nbsp; &nbsp; content: "Click for the answer",<br>&nbsp; &nbsp; mytap: function() {<br>&nbsp; &nbsp; &nbsp; &nbsp; this.doMyEvent({ answer: 42 });<br>&nbsp; &nbsp; }<br>});</pre>
+        <p>Event immer mit "on" prefixed</p>
+        <p>Caller prefixed mit "do"</p>
+        <pre>enyo.kind({<br>&nbsp; &nbsp; name: "Subscriber",<br>&nbsp; &nbsp; components: [ { kind: "MyKind", onMyEvent: "answered" }],<br>&nbsp; &nbsp; answered: function(inSender, inEvent) {<br>&nbsp; &nbsp; &nbsp; &nbsp; alert("The answer is: " + inEvent.answer);<br>&nbsp; &nbsp; &nbsp; &nbsp; return(true);<br>&nbsp; &nbsp; }<br>});</pre>
+        <p>Event bubbling</p>
+    </div>
+</section>
+<section>
+    <h2>Signals</h2>
+    <pre>enyo.Signals.send("onButtonPressed");<br>components: [<br>  {kind: "display", content: "Waiting" },<br>  {kind: "Signals", onButtonPressed: "update" }<br>],<br>update: function(inSender, inEvent) {<br>  this.$.display.setContent("Got it");<br>}<br>kann nicht unterbunden werden</pre>
+    <div>Enyo verwendet Signals für DOM Events</div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <pre style="font-style: normal;font-variant: normal;width: 862.1875px;">create: function() {<br>  &nbsp; this.inherited(arguments);<br>&nbsp; &nbsp; this.timer = window.setInterval(enyo.bind(this, "beat"), 1000);<br>},<br>destroy: function() {<br>&nbsp; &nbsp; if(this.timer !== undefined) {<br>&nbsp; &nbsp; &nbsp; &nbsp; window.clearInterval(this.timer);<br>&nbsp; &nbsp; }<br>&nbsp; &nbsp; this.inherited(arguments);<br>},<br>beat: function() {//TODO}</pre>
+    </div>
+</section>
+<section>
+    <h2>Constructor and Statics</h2>
+    <div>
+        <br>
+    </div>
+    <pre>constructor: function() {<br>&nbsp; this.instanceArray = [];<br>&nbsp; this.inherited(arguments);<br>}</pre>
+    <p>Constructor für alle Controls</p>
+    <p>Create nur für enyo.Component</p>
+    <pre>enyo.kind({<br>&nbsp; &nbsp; name: "InstanceCounter",<br>&nbsp; &nbsp; constructor: function() {<br>&nbsp; &nbsp; &nbsp; &nbsp; InstanceCounter.count += 1;<br>&nbsp; &nbsp; &nbsp; &nbsp; this.inherited(arguments);<br>&nbsp; &nbsp; },<br>&nbsp; &nbsp; statics: {<br>&nbsp; &nbsp; &nbsp; &nbsp; count: 0,<br>&nbsp; &nbsp; &nbsp; &nbsp; getCount: function() {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return(this.count);<br>&nbsp; &nbsp; &nbsp; &nbsp; }<br>&nbsp; &nbsp; }</pre>
+    <div>
+        <br>
+    </div>
+</section>
+</section>
+<section>
+    <section>
+        <h2>Components, Controls</h2>
+        <div>Buttons (plain vs onyx)</div>
+        <div>Animator</div>
+        <div>Ajax, JsonP</div>
+    </section>
+    <section>
+        <h2>Components/Composition</h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <pre>enyo.kind({
+  name: "App",
+  components: [
+    {kind: "Panels", name:"...", classes:"...", components: [
+      {kind: "ViewStack", name:"navPanels", onTransitionFinish:"..."},
+      {kind: "Panels", name:"...", arrangerKind:"...", components: [
+        {kind: "FittableRows", components: [
+          {kind:"Scroller", name:"..", horizontal: "hidden", fit:true},
+          {kind: "onyx.Toolbar", layoutKind:"...", name:"...", noStretch: true, components: [
+          ...</pre>
+            <p>&nbsp; &nbsp; </p>
+            <p>create/destroy lifecycle</p>
+        </div>
+    </section>
+    <section>
+        <h2>Dynamic Components</h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <pre>enyo.kind({<br>&nbsp; &nbsp; name: "DynamicSample",<br>&nbsp; &nbsp; components: [<br>&nbsp; &nbsp; &nbsp; &nbsp; { kind: "Button", content: "Click", ontap: "tapped" }<br>&nbsp; &nbsp; ],<br>&nbsp; &nbsp; tapped: function(inSender, inEvent) {<br>&nbsp; &nbsp; &nbsp; &nbsp; this.createComponent({ content: "A new component" });<br>&nbsp; &nbsp; &nbsp; &nbsp; this.render();<br>&nbsp; &nbsp; &nbsp; &nbsp; return(true);<br>&nbsp; &nbsp; }<br>});</pre>
+            <p>Call destroy um component wieder zu entfernen</p>
+        </div>
+    </section>
+    <section>
+        <h2>Controls</h2>
+        <div>(erben von Component)</div>
+        <div>
+            <br>
+        </div>
+        <p style="text-align: left;">
+            <i>"Core"</i> Enyo</p>
+            <div>
+                <div style="text-align: left;">
+                    <ul>
+                        <li>
+                            <span style="letter-spacing: -0.02em;">Button, Checkbox, Image, Input, RichText, ...</span>
+                            <br>
+                        </li>
+                        <li>
+                            <span style="letter-spacing: -0.02em;">Rendern per default in &lt;div&gt; (tag: "span")</span>
+                            <br>
+                        </li>
+                        <li>
+                            <span style="text-align: center;letter-spacing: -0.02em;">Ungestylt (Browser-Default)</span>
+                            <br>
+                        </li>
+                        <li>
+                            <span style="text-align: center;letter-spacing: -0.02em;">Per Default html encoded (allowHtml: true)</span>
+                            <br>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <br>
+            </div>
+            <div>http://jsfiddle.net/imperialcoder/hqKxZ/</div>
+        </section>
+        <section>
+            <h2>Controls 2</h2>
+            <div>
+                <br>
+            </div>
+            <div style="text-align: left;">Onyx&nbsp;</div>
+            <div style="text-align: left;">
+                <ul>
+                    <li>
+                        <span style="letter-spacing: -0.02em;">Designed Widgets</span>
+                        <br>
+                    </li>
+                    <li>
+                        <span style="letter-spacing: -0.02em;">Erweiterte Controls (Drawer, Picker, ...)</span>
+                        <br>
+                    </li>
+                    <li>
+                        <span style="letter-spacing: -0.02em;">Erweitertes Styling (Decorator)</span>
+                        <br>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <br>
+            </div>
+            <div>http://jsfiddle.net/imperialcoder/yTjm8/</div>
+            <div>
+                <br>
+            </div>
+            <div style="text-align: left;">
+                <span style="letter-spacing: -0.02em;">hasNode()</span>
+                <br>
+            </div>
+            <div style="text-align: left;">
+                <ul>
+                    <li>
+                        <span style="letter-spacing: -0.02em;">Externe Libraries einbinden</span>
+                        <br>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <br>
+            </div>
+        </section>
+        <section>
+            <h2>Controls 3</h2>
+            <div>
+                <br>
+            </div>
+            <div>Animator == periodische Events</div>
+            <div>Duration - Start - Step - Stop</div>
+            <div>
+                <br>
+            </div>
+            <div>Ajax</div>
+            <div>
+                <br>
+            </div>
+            <div>.go()</div>
+            <div>.response()</div>
+            <div>.error()</div>
+            <div>cacheBust</div>
+            <div>
+                <br>
+            </div>
+            <div>http://jsfiddle.net/imperialcoder/dF3AD/<br>
+            </div>
+        </section>
+    </section>
+    <section>
+        <section>
+            <h2>layout</h2>
+            <div>
+                <span style="letter-spacing: -0.02em;">scroller, repeater</span>
+                <br>
+            </div>
+            <div>fittable, list, panels</div>
+            <div>
+                <span style="font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;">responsive design</span>
+                <br>
+            </div>
+        </section>
+        <section>
+            <h2>Scroller, Repeater</h2>
+            <div>
+                <br>
+            </div>
+            <div>Scroller</div>
+            <div>Unterscheidet Touch-Devices/Browser</div>
+            <div>
+                <br>
+            </div>
+            <div>Repeater</div>
+            <div>Kurze Listen (ca. 100 Elemente)</div>
+            <div>Lädt Objekte erst bei Bedarf (setupItem)</div>
+        </section>
+        <section>
+            <h2>Layout</h2>
+            <div>
+                <br>
+            </div>
+            <div>Layout library</div>
+            <div>Fittable&nbsp;<span style="letter-spacing: -0.02em;">Row/Column Layout</span>
+        </div>
+        <div>"fit" Property</div>
+        <div>Nested == schlechte Performance</div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <a href="http://jsfiddle.net/gh/gist/enyo/2.1/4264088/">http://jsfiddle.net/gh/gist/enyo/2.1/4264088/</a>
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2>Listen</h2>
+        <div>
+            <br>
+        </div>
+        <div>Ähnlich Repeater (count property)</div>
+        <div>Flyweight pattern</div>
+        <div>Nur "simple" Controls und Bilder in Listen</div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <a href="http://jsfiddle.net/gh/gist/enyo/2.1/4264153/">http://jsfiddle.net/gh/gist/enyo/2.1/4264153/</a>
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2>Responsive Design</h2>
+        <div>
+            <br>
+        </div>
+        <div>Panels</div>
+        <div>immer nur eines aktiv</div>
+        <div>Flexibel, Animationen</div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <a href="http://jsfiddle.net/gh/gist/enyo/2.1/4264169/">http://jsfiddle.net/gh/gist/enyo/2.1/4264169/</a>
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2 style="font-style: normal;font-variant: normal;">Styling</h2>
+        <div>
+            <br>
+        </div>
+        <h2>
+            <div style="font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;letter-spacing: normal;">styles, classes</div>
+            <div style="font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;letter-spacing: normal;">less (http://lesscss.org/)</div>
+            <div style="font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;letter-spacing: normal;">
+                <br>
+            </div>
+            <div style="font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;letter-spacing: normal;">scroller + list</div>
+            <div style="font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;letter-spacing: normal;">height property</div>
+            <div style="font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;letter-spacing: normal;">oder</div>
+            <div style="font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;letter-spacing: normal;">fittable component</div>
+            <div style="font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;letter-spacing: normal;">
+                <br>
+            </div>
+            <div style="font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;letter-spacing: normal;">Debugging: Pick your browser</div>
+        </h2>
+    </section>
+</section>
+<section>
+    <h2>g11n</h2>
+    <div>
+        <br>
+    </div>
+    <div>Übersetzungen</div>
+    <div>
+        <div style="font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;">de.json (<span style="letter-spacing: -0.02em;">optional de_at.json)</span>
+    </div>
+    <pre>
+        <span style="letter-spacing: -0.02em;">content: $L("Exit")</span>
+    </pre>
+    <pre style="font-style: normal;font-variant: normal;width: 862.1875px;">{<br>"Exit": "Beenden"<br>}</pre>
+</div>
+<div>
+    <span style="letter-spacing: -0.02em;">Formate:</span>
+    <br>
+</div>
+<div>Datum</div>
+<div>Telefonnummern</div>
+<div>
+    <br>
+</div>
+<div>enyo.g11n</div>
+<div>
+    <br>
+</div>
+<div>
+    <a href="http://jsfiddle.net/gh/gist/enyo/2.1/4264355/">http://jsfiddle.net/gh/gist/enyo/2.1/4264355/</a>
+    <br>
+</div>
+</section>
+<section>
+    <h2>bootplate</h2>
+    <div style="font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;">
+        <a href="https://github.com/enyojs/bootplate">https://github.com/enyojs/bootplate</a>
+        <br>
+    </div>
+    <pre>git clone https://github.com/enyojs/bootplate.git [Projectname]<br>cd [Projectname]<br>git submodule update --init<br>[Neues Git-Repository erzeugen]<br>git remote set-url origin git@github.com:&lt;username&gt;/[Projectname].git<br>git submodule add https://github.com/enyojs/g11n.git lib/g11n</pre>
+    <div style="font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;">
+        <a href="https://npmjs.org/package/enyo" style="letter-spacing: -0.02em;">https://npmjs.org/package/enyo</a>
+        <br>
+    </div>
+    <pre>npm install -g enyo<br>enyo init:bootplate<br>enyo debug</pre>
+    <div style="font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;">
+        <br>
+    </div>
+    <div style="font-size: 36.0px;font-style: normal;font-variant: normal;line-height: 43.1875px;">Update Submodule</div>
+    <div>
+        <pre>git submodule foreach 'git checkout master'<br>git submodule foreach 'git pull'</pre>
+    </div>
+</section>
+<section>
+    <section>
+        <h2>deployment</h2>
+        <div>web</div>
+        <div>desktop</div>
+        <div>mobile</div>
+        <div>
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2>Web</h2>
+        <div>
+            <br>
+        </div>
+        <div>Sourcen hochladen -&gt; Done</div>
+    </section>
+    <section>
+        <h2>Desktop</h2>
+        <div>
+            <br>
+        </div>
+        <div>Intel AppUp Encapsulator (Discontinued per 1.Mai)</div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <a href="http://software.intel.com/en-us/articles/do-it-yourself-chromium-base-web-application-container">http://software.intel.com/en-us/articles/do-it-yourself-chromium-base-web-application-container</a>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>Win8</div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <a href="https://github.com/enyojs/enyo/wiki/Enyo-Apps-on-Windows-8">https://github.com/enyojs/enyo/wiki/Enyo-Apps-on-Windows-8</a>
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2>Mobile</h2>
+        <div>
+            <br>
+        </div>
+        <div>Phonegap</div>
+        <div>Cross Platform</div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <a href="http://phonegap.com/">http://phonegap.com/</a>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>Build Engine</div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+    </section>
+</section>
+<section>
+    <h2>Sampler</h2>
+    <div>
+        <br>
+    </div>
+    <div>
+        <a href="http://nightly.enyojs.com/latest/sampler/">http://nightly.enyojs.com/latest/sampler/</a>
+        <br>
+    </div>
+</section>
+</div>
+
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
